@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/slider.css" />
+  <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css" />
+  <link rel="icon" href="assets/img/logo.png">
+  <title>Abinawa | Beranda</title>
+</head>
+
+<body>
+
+  <button onclick="backtoTop()" id="upButton" title="Go to top"><i class="fa fa-chevron-up"></i></button>
+  <header class="header">
+    <video src="assets/video/vid.mp4" loop="" id="header-video"></video>
+    <div class="header-overlay"></div>
+    <div class="header-content">
+      <nav id="navbar">
+        <div id="navbar-sticky" class="">
+          <section class="container">
+            <div id="navbar-inner">
+              <div id="container-logo">
+                <img src="assets/img/logo.png" alt="Image Logo">
+                <h1>Abinawa Indonesia</h1>
+              </div>
+              <div id="container-menu">
+                <ul>
+                  <li class="hvr-underline-from-center"><a href="index.html">Beranda</a></li>
+                  <li class="hvr-underline-from-center"><a href="destinasi.html">Destinasi</a></li>
+                  <li class="hvr-underline-from-center"><a href="404.html">Tentang</a></li>
+                  <li class="hvr-underline-from-center"><a href="berita.html">Berita</a></li>
+                  <li class="hvr-underline-from-center"><a href="index.html#galeri-here">Galeri</a></li>
+                </ul>
+                <div id="container-button" onclick="toggleButtonMenuNav();">
+                  <div class="line1"></div>
+                  <div class="line2"></div>
+                  <div class="line3"></div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </nav>
+      <div>
+        <div class="container">
+          <div class="title-header">
+            <div class="title-header-inner reverse">
+              <section>
+                <!-- Dibungkus lagi -->
+                <p>Indonesia</p>
+                <p>Welcome to the beautiful Indonesia</p>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-button">
+      <div href="#" class="button-bg" onclick="ResumePause(this)" style="float: left;">
+        <button class='btn-play toggle'></button>
+      </div>
+      <div class="header-button-title">
+        <p>WATCH</p><br>
+        <p>Intro Video</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Destinasi baru -->
+  <section id="slider-body">
+    <div class="container">
+      <div class="tentang-title animation-element bounce-up">
+        <div class="main">
+          Destinasi terbaru
+          <div class="shadow">Jelajah</div>
+        </div>
+        <div align="center" class="custom-hr-pos">
+          <hr class="custom-hr">
+        </div>
+      </div>
+      <div class="slide-zone">
+        <div class="slider-button" onclick="reorderList();">
+          <!-- <img src="assets/img/button.png" alt=""> -->
+          <span><i class="fa fa-arrow-left"></i></span>
+        </div>
+        <ul id="slider-list">
+          <li class="col-a-1" id="slide-1">
+            <a href="destinasi-RA.html">
+              <h1>Raja Ampat</h1>
+              <p>Papua</p>
+              <div class="slide-img">
+                <img src="assets/img/destinasi-ra/raja-ampat.jpg" alt="">
+              </div>
+            </a>
+          </li>
+
+          <li class="col-a-1" id="slide-2">
+            <a href="destinasi-GT.html">
+              <h1>Gili Trawangan</h1>
+              <p>Nusa Tenggara Barat</p>
+              <div class="slide-img">
+                <img src="assets/img/destinasi-gt/gili-tarawangan.jpg" alt="">
+              </div>
+            </a>
+          </li>
+
+          <li class="col-a-1" id="slide-3">
+            <a href="destinasi-PK.html">
+              <h1>Pulau Komodo</h1>
+              <p>Lombok</p>
+              <div class="slide-img">
+                <img src="assets/img/destinasi-pk/pulau-komodo.jpg" alt="">
+              </div>
+            </a>
+          </li>
+
+          <li class="col-a-1" id="slide-4">
+            <a href="destinasi-tnw.html">
+              <h1>TN Wakatobi</h1>
+              <p>Lombok</p>
+              <div class="slide-img">
+                <img src="assets/img/destinasi-wabi/pulau-wakatobi.jpg" alt="">
+              </div>
+            </a>
+          </li>
+
+          <li class="col-a-1" id="slide-5">
+            <a href="destinasi-bali.html">
+              <h1>Bali</h1>
+              <p>Bali</p>
+              <div class="slide-img">
+                <img src="assets/img/destinasi-bali/bali-gambar1.jpg" alt="">
+              </div>
+            </a>
+          </li>
+
+          <li class="col-a-1" id="slide-6">
+            <a href="destinasi-dt.html">
+              <h1>Danau Toba</h1>
+              <p>Medan</p>
+              <div class="slide-img">
+                <img src="assets/img/destinasi-dt/danau-toba.jpg" alt="">
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- TENTANG -->
+  <section class="tentang">
+    <div class="container">
+      <div class="tentang-title animation-element bounce-up">
+        <div class="main">
+          Tentang
+          <div class="shadow">Tentang</div>
+        </div>
+        <div align="center" class="custom-hr-pos">
+          <hr class="custom-hr">
+        </div>
+      </div>
+      <div class="tentang-wrap">
+        <div class="col-a-12 col-b-6 col-c-4 animation-element bounce-up a1">
+          <div class="tentang-list">
+            <div class="tentang-list-content">
+              <img src="assets/img/tentang-icon-1.jpg" alt="">
+              <h4 class="tentang-list-title">Ragam Budaya</h4>
+              <p>Keanekaragaman budaya Indonesia dari Sabang sampai Merauke</p>
+              <div class="tentang-button">
+                <a href="#" class="btn btn-main">Selanjutnya</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-a-12 col-b-6 col-c-4 animation-element bounce-up a2">
+          <div class="tentang-list">
+            <div class="tentang-list-content">
+              <img src="assets/img/tentang-icon-2.jpg" alt="">
+              <h4 class="tentang-list-title">Ribuan Pulau</h4>
+              <p>Indonesia merupakan negara yang memiliki lebih dari 17.000 pulau</p>
+              <div class="tentang-button">
+                <a href="#" class="btn btn-main">Selanjutnya</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-a-12 col-b-6 col-c-4 animation-element bounce-up a3" id="tentang-3">
+          <div class="tentang-list">
+            <div class="tentang-list-content">
+              <img src="assets/img/tentang-icon-3.jpg" alt="">
+              <h4 class="tentang-list-title">Ribuan Pulau</h4>
+              <p>Indonesia merupakan ekonomi terbesar di Asia Tenggara</p>
+              <div class="tentang-button">
+                <a href="#" class="btn btn-main">Selanjutnya</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BERITA -->
+  <section class="berita">
+    <div class="container">
+      <div class="berita-title animation-element bounce-up">
+        <div class="main">
+          Berita terbaru
+          <div class="shadow">Berita</div>
+        </div>
+        <div align="center" class="custom-hr-pos">
+          <hr class="custom-hr">
+        </div>
+      </div>
+      <!-- BERITA 1 START -->
+      <div class="col-a-12 col-b-6 col-c-6 animation-element bounce-up a1">
+        <div class="berita-list">
+          <div class="berita-list-content">
+            <a href="berita-gd.html">
+              <div class="col-a-12 col-b-12 col-c-5 berita-bg-1">
+                <div class="berita-img"></div>
+              </div>
+              <div class="col-a-12 col-b-12 col-c-7">
+                <div class="berita-desc">
+                  <h5>Pendakian Gunung Gede Pangrango Kembali dibuka</h5>
+                  <p class="berita-text">Kepala Bidang Tekns Konservasi Balai Besar menjelaskan syarat baru mendaki Gunung Gede ..</p>
+                  <p class="timestamp">24 Maret 2018</p>
+                  <div class="berita-user">
+                    <div class="berita-avatar"><i class="fa fa-user-circle fa-lg"></i></div>
+                    <div class="berita-username">
+                      <p>By Admin</p>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- BERITA 2 START -->
+      <div class="col-a-12 col-b-6 col-c-6 animation-element bounce-up a2">
+        <div class="berita-list">
+          <div class="berita-list-content">
+            <a href="#">
+              <div class="col-a-12 col-b-12 col-c-5 berita-bg-2">
+                <div class="berita-img">
+                </div>
+              </div>
+              <div class="col-a-12 col-b-12 col-c-7">
+                <div class="berita-desc">
+                  <h5>Raflesia Arnoldi Rekor Bunga Terbesar di Dunia Tumbuh Diameternya Mencapai ...</h5>
+                  <p class="berita-text">Tumbuhan parasit obligat yang terkenal karena memiliki bunga berukuran sangat besar, bahkan ...</p>
+                  <p class="timestamp">24 Maret 2018</p>
+                  <div class="berita-user">
+                    <div class="berita-avatar"><i class="fa fa-user-circle fa-lg"></i></div>
+                    <div class="berita-username">
+                      <p>By Admin</p>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+      <!-- BERITA 3 START -->
+      <div class="col-a-12 col-b-6 col-c-6 animation-element bounce-up a3">
+        <div class="berita-list">
+          <div class="berita-list-content">
+            <a href="berita-dt.html">
+              <div class="col-a-12 col-b-12 col-c-5 berita-bg-3">
+                <div class="berita-img">
+                </div>
+              </div>
+              <div class="col-a-12 col-b-12 col-c-7">
+                <div class="berita-desc">
+                  <h5>Danau Toba, Danau Terbesar di Asia Tenggara</h5>
+                  <p class="berita-text">Danau Toba adalah danau tekto- vulkanik yang terletak di Provinsi Sumatera Utara ...</p>
+                  <p class="timestamp">24 Maret 2018</p>
+                  <div class="berita-user">
+                    <div class="berita-avatar"><i class="fa fa-user-circle fa-lg"></i></div>
+                    <div class="berita-username">
+                      <p>By Admin</p>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+      <!-- BERITA 4 START -->
+      <div class="col-a-12 col-b-6 col-c-6 animation-element bounce-up a4">
+        <div class="berita-list">
+          <div class="berita-list-content">
+            <a href="#">
+              <div class="col-a-12 col-b-12 col-c-5 berita-bg-4">
+                <div class="berita-img">
+                </div>
+              </div>
+              <div class="col-a-12 col-b-12 col-c-7">
+                <div class="berita-desc">
+                  <h5>Candi Borobudur yaitu Candi Budha Terbesar di Dunia</h5>
+                  <p class="berita-text">Kejayaan Indonesia di zaman dulu, tepatnya pada masa kerajaan Dinasti Sailendra ...
+                  </p>
+                  <p class="timestamp">24 Maret 2018</p>
+                  <div class="berita-user">
+                    <div class="berita-avatar"><i class="fa fa-user-circle fa-lg"></i></div>
+                    <div class="berita-username">
+                      <p>By Admin</p>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <!-- berita button in the middle -->
+      <div class="berita-button animation-element bounce-up a5">
+        <a href="berita.html" class="btn btn-main">Selanjutnya</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERI -->
+  <section class="galeri" id="galeri-here">
+    <div class="container-full">
+      <div class="galeri-title animation-element bounce-up">
+        <div class="main">
+          Galeri
+          <div class="shadow">Galeri</div>
+        </div>
+        <div align="center" class="custom-hr-pos">
+          <hr class="custom-hr">
+        </div>
+      </div>
+      <div class="galeri-items">
+        <!-- GALERI 1 -->
+        <div class="col-a-12 col-c-6 animation-element bounce-up a1">
+          <div class="galeri-parent">
+            <div class="galeri-child galeri-items-thumbnail galeri-bg-1">
+              <a href="#modal1" data-target="#modal1">Keindahan Gunung Rinjani yang ada di pulau Lombok</a>
+            </div>
+          </div>
+        </div>
+        <!-- GALERI 2 -->
+        <div class="col-a-12 col-c-3 animation-element bounce-up a2" onclick="" id="galeri-2">
+          <div class="galeri-parent">
+            <div class="galeri-child galeri-items-thumbnail galeri-bg-2">
+              <a href="#modal2" data-target="#modal2">Keindahan Candi Borobudur yang ada di Jawa Tengah</a>
+            </div>
+          </div>
+        </div>
+        <!-- GALERI 3 -->
+        <div class="col-a-12 col-c-3 animation-element bounce-up a3" onclick="" id="galeri-3">
+          <div class="galeri-parent">
+            <div class="galeri-child galeri-items-thumbnail galeri-bg-3">
+              <a href="#modal3" data-target="#modal3">Keindahan Kawah Gunung Ijen yang ada di Jawa Timur</a>
+            </div>
+          </div>
+        </div>
+        <!-- GALERI 4 -->
+        <div class="col-a-12 col-c-3 animation-element bounce-up forth" onclick="" id="galeri-4">
+          <div class="galeri-parent">
+            <div class="galeri-child galeri-items-thumbnail galeri-bg-4">
+              <a href="#modal4" data-target="#modal4">Keindahan Kawah Putih yang ada di Jawa Barat</a>
+            </div>
+          </div>
+        </div>
+        <!-- GALERI 5 -->
+        <div class="col-a-12 col-c-3 animation-element bounce-up a5" onclick="" id="galeri-5">
+          <div class="galeri-parent">
+            <div class="galeri-child galeri-items-thumbnail galeri-bg-5">
+              <a href="#modal5" data-target="#modal5">Keindahan Pantai Nusa Dua yang ada di Bali</a>
+            </div>
+          </div>
+        </div>
+        <!-- GALERI 6 -->
+        <div class="col-a-12 col-c-3 animation-element bounce-up a6" onclick="" id="galeri-6">
+          <div class="galeri-parent">
+            <div class="galeri-child galeri-items-thumbnail galeri-bg-6">
+              <a href="#modal6" data-target="#modal6">Keindahan Pura Luhur Uluwantu yang ada di Bali</a>
+            </div>
+          </div>
+        </div>
+        <!-- GALERI 7 -->
+        <div class="col-a-12 col-c-3 animation-element bounce-up a7" onclick="" id="galeri-7">
+          <div class="galeri-parent">
+            <div class="galeri-child galeri-items-thumbnail galeri-bg-7">
+              <a href="#modal7" data-target="#modal7">Keindahan Monumen Nasional yang ada di Jakarta</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODALS -->
+  <!-- MODAL 1 -->
+  <div class="modal" id="modal1">
+    <div class="modal-content">
+      <div class="col-a-12 col-c-5">
+        <div class="modal-thumbnail galeri-bg-1">
+          <div class="modal-nav">
+            <a href="#modal7">
+              <div class="pagination"><i class="fa fa-chevron-left fa-lg"></i></div>
+            </a>
+            <a href="#modal2">
+              <div class="pagination"><i class="fa fa-chevron-right fa-lg"></i></div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-a-12 col-c-7">
+        <div class="close"><a href="#!"><span>&#43;</span></a></div>
+        <div class="modal-content-inner">
+          <h4>Gunung Rinjani</h4>
+          <p>Gunung Rinjani adalah gunung yang berlokasi di Pulau Lombok, Nusa Tenggara Barat. Gunung yang merupakan gunung berapi kedua tertinggi di Indonesia dengan ketinggian 3.726 m dpl serta terletak pada lintang 8º25' LS dan 116º28' BT ini merupakan
+            gunung favorit bagi pendaki Indonesia karena keindahan pemandangannya.</p>
+        </div>
+      </div>
+    </div>
+    <a href="#!">a<div class="modal-overlay"></div></a>
+  </div>
+  <!-- MODAL 2 -->
+  <div class="modal" id="modal2">
+    <div class="modal-content">
+      <div class="col-a-12 col-c-5">
+        <div class="modal-thumbnail galeri-bg-2">
+          <div class="modal-nav">
+            <a href="#modal1"><span class="pagination"><i class="fa fa-chevron-left fa-lg"></i></span></a>
+            <a href="#modal4"><span class="pagination"><i class="fa fa-chevron-right fa-lg"></i></span> </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-a-12 col-c-7">
+        <div class="close"><a href="#!"><span>&#43;</span></a></div>
+        <div class="modal-content-inner">
+          <h4>Candi Borobudur</h4>
+          <p>Borobudur adalah sebuah candi Buddha yang terletak di Borobudur, Magelang, Jawa Tengah, Indonesia. Candi ini berlokasi di kurang lebih 100 km di sebelah barat daya Semarang, 86 km di sebelah barat Surakarta, dan 40 km di sebelah barat laut Yogyakarta.
+            Candi berbentuk stupa ini didirikan oleh para penganut agama Buddha Mahayana sekitar abad ke-8 masehi pada masa pemerintahan wangsa Syailendra. Borobudur adalah candi atau kuil Buddha terbesar di dunia.</p>
+        </div>
+      </div>
+    </div>
+    <a href="#!">a<div class="modal-overlay"></div></a>
+  </div>
+  <!-- MODAL 3 -->
+  <div class="modal" id="modal3">
+    <div class="modal-content">
+      <div class="col-a-12 col-b-12 col-c-5">
+        <div class="modal-thumbnail galeri-bg-3">
+          <div class="modal-nav">
+            <a href="#modal2">
+              <div class="pagination"><i class="fa fa-chevron-left fa-lg"></i></div>
+            </a>
+            <a href="#modal4">
+              <div class="pagination"><i class="fa fa-chevron-right fa-lg"></i></div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-a-12 col-b-12 col-c-7">
+        <div class="close"><a href="#!"><span>&#43;</span></a></div>
+        <div class="modal-content-inner">
+          <h2>Gunung Ijen</h2>
+          <p>Gunung Ijen adalah sebuah gunung berapi aktif yang terletak di perbatasan antara Kabupaten Banyuwangi dan Kabupaten Bondowoso, Jawa Timur, Indonesia. Gunung ini memiliki ketinggian 2.443 mdpl dan terletak berdampingan dengan Gunung Merapi. Gunung
+            Ijen terakhir meletus pada tahun 1999.</p>
+        </div>
+      </div>
+    </div>
+    <a href="#!">
+      <div class="modal-overlay"></div>
+    </a>
+  </div>
+  <!-- MODAL 4 -->
+  <div class="modal" id="modal4">
+    <div class="modal-content">
+      <div class="col-a-12 col-c-5">
+        <div class="modal-thumbnail galeri-bg-4">
+          <div class="modal-nav">
+            <a href="#modal3">
+              <div class="pagination"><i class="fa fa-chevron-left fa-lg"></i></div>
+            </a>
+            <a href="#modal5">
+              <div class="pagination"><i class="fa fa-chevron-right fa-lg"></i></div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-a-12 col-c-7">
+        <div class="close"><a href="#!"><span>&#43;</span></a></div>
+        <div class="modal-content-inner">
+          <h4>Kawah Putih</h4>
+          <p>Kawah Putih yang terletak di Ciwidey, Bandung. Terletak sekira 50 km arah selatan Kota Bandung, objek wisata ini merupakan sebuah danau vulkanis yang dihasilkan dari letusan Gunung Patuha. Karena tercampur dengan unsur belerang, tanah di kawasan
+            wisata ini seluruhnya berwarna putih. Yang menarik, danau di sini juga bisa berubah warna sesuai dengan kadar belerang, suhu, serta iklim. Karena letaknya berada pada ketinggian 2.400 dpl, cuaca di sini terbilang cukup dingin sehingga Anda
+            disarankan untuk memakai jaket tebal. </p>
+        </div>
+      </div>
+    </div>
+    <a href="#!">
+      <div class="modal-overlay"></div>
+    </a>
+  </div>
+  <!-- MODAL 5 -->
+  <div class="modal" id="modal5">
+    <div class="modal-content">
+      <div class="col-a-12 col-c-5">
+        <div class="modal-thumbnail galeri-bg-5">
+          <div class="modal-nav">
+            <a href="#modal4">
+              <div class="pagination"><i class="fa fa-chevron-left fa-lg"></i></div>
+            </a>
+            <a href="#modal6">
+              <div class="pagination"><i class="fa fa-chevron-right fa-lg"></i></div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-a-12 col-c-7">
+        <div class="close"><a href="#!"><span>&#43;</span></a></div>
+        <div class="modal-content-inner">
+          <h4>Pantai Nusa Dua</h4>
+          <p>Pantai nusa dua berada kompleks perhotelan di kawasan selatan Bali, Hanya 20 menit berkendara dari Denpasar, anda perlu masuk wilayah BTDC atau Bali Tourism Development Corporation. Kawasan ini sendiri terdiri dari ratusan hektar kompleks perhotelan
+            mewah dengan tata kota berkelas internasional.</p>
+        </div>
+      </div>
+    </div>
+    <a href="#!">a<div class="modal-overlay"></div></a>
+  </div>
+  <!-- MODAL 6 -->
+  <div class="modal" id="modal6">
+    <div class="modal-content">
+      <div class="col-a-12 col-c-5">
+        <div class="modal-thumbnail galeri-bg-6">
+          <div class="modal-nav">
+            <a href="#modal5">
+              <div class="pagination"><i class="fa fa-chevron-left fa-lg"></i></div>
+            </a>
+            <a href="#modal7">
+              <div class="pagination"><i class="fa fa-chevron-right fa-lg"></i></div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-a-12 col-c-7">
+        <div class="close"><a href="#!"><span>&#43;</span></a></div>
+        <div class="modal-content-inner">
+          <h4>Pura Luhur Uluwatu</h4>
+          <p>Pura Luhur Uluwatu atau Pura Uluwatu merupakan pura yang berada di wilayah Desa Pecatu, Kecamatan Kuta, Badung. Pura yang terletak di ujung barat daya pulau Bali di atas anjungan batu karang yang terjal dan tinggi serta menjorok ke laut ini
+            merupakan Pura Sad Kayangan yang dipercaya oleh orang Hindu sebagai penyangga dari 9 mata angin. Pura ini pada mulanya digunakan menjadi tempat memuja seorang pendeta suci dari abad ke-11 bernama Empu Kuturan. Ia menurunkan ajaran Desa Adat
+            dengan segala aturannya.</p>
+        </div>
+      </div>
+    </div>
+    <a href="#!">
+      <div class="modal-overlay"></div>
+    </a>
+  </div>
+  <!-- MODAL 7 -->
+  <div class="modal" id="modal7">
+    <div class="modal-content">
+      <div class="close"><a href="#!"><span>&#43;</span></a></div>
+      <div class="col-a-12 col-c-5">
+        <div class="modal-thumbnail galeri-bg-7">
+          <div class="modal-nav">
+            <a href="#modal6">
+              <div class="pagination"><i class="fa fa-chevron-left fa-lg"></i></div>
+            </a>
+            <a href="#modal1">
+              <div class="pagination"><i class="fa fa-chevron-right fa-lg"></i></div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-a-12 col-c-7">
+        <div class="modal-content-inner">
+          <h4>Monumen Nasional</h4>
+          <p>Monumen Nasional atau yang populer disingkat dengan Monas atau Tugu Monas adalah monumen peringatan setinggi 132 meter (433 kaki) yang didirikan untuk mengenang perlawanan dan perjuangan rakyat Indonesia untuk merebut kemerdekaan dari pemerintahan
+            kolonial Hindia Belanda.</p>
+        </div>
+      </div>
+    </div>
+    <a href="#!">a<div class="modal-overlay"></div></a>
+  </div>
+
+
+  <!-- NOTICE -->
+  <section class="notice">
+    <div class="container">
+      <div class="notice-inner">
+        <div class="col-a-12 col-b-12 col-c-12">
+          <h3 class="animation-element bounce-up">Tetaplah Update Berita Kami</h3>
+          <div class="notice-form animation-element bounce-up a2">
+            <form>
+              <input type="text" name="search" class="input-email" placeholder="Masukkan email anda disini" />
+              <input type="submit" name="submit" class="btn btn-submit" value="Kirim" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div id="footer-primary">
+          <div class="col-c-5">
+            <div class="footer-primary-col">
+              <img src="assets/img/logo.png" alt="">
+              <h3>Abinawa Indonesia</h3>
+              <div class="clearfix"></div>
+              <p>Jl. Al-Muwahhiddin, Karangtengah, Kec. Cibadak, Kab. Sukabumi, Desa Karangtengah, Jawa Barat 43351</p>
+            </div>
+          </div>
+          <div class="col-a-12 col-c-7">
+            <div class="col-a-12 col-c-4 footer-primary-cols">
+              <h4>Navigasi</h4>
+              <li><a href="index.html">Beranda</a></li>
+              <li><a href="destinasi.html">Destinasi</a></li>
+              <li><a href="404.html">Tentang</a></li>
+              <li><a href="berita.html">Berita</a></li>
+              <li><a href="index.html">Galeri</a></li>
+            </div>
+            <div class="col-a-12 col-c-4 footer-primary-cols">
+              <h4>Kontak</h4>
+              <p>No. Telephone</p>
+              <p>+62 123 4567</p>
+              <p>Email</p>
+              <a href="#!">contact@abinawa.travel</a>
+            </div>
+            <div class="col-a-12 col-c-4 footer-primary-cols">
+              <h4>Media Sosial</h4>
+              <li><a href="#!">Facebook</a></li>
+              <li><a href="#!">Twitter</a></li>
+              <li><a href="#!">Instagram</a></li>
+              <li><a href="#!">Google+</a></li>
+            </div>
+          </div>
+        </div>
+        <div id="footer-secondary">
+          <hr>
+          <div class="col-c-12">
+            <p>Copyright &copy; 2018</p>
+            <p>Powered by <a href="#">Excitonium</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
+  <script type="text/javascript" src="assets/js/smoothscroll.js"></script>
+</body>
+
+</html>
